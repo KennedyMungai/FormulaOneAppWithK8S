@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+Metadata:
+  name: formulaone-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: formulaone
+  template:
+    metadata:
+      labels:
+        app: formulaone
+    spec:
+      containers:
+        - name: formulaone-api
+          image: kennedymungai/formulaone-with-k8s
