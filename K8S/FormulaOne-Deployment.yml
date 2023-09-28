@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: formulaone-api
-          image: kennedymungai/formulaone-with-k8s
+          image: kennedymungai/formulaone-with-k8s:latest
           ports:
             - containerPort: 80
               name: http-web-ai
